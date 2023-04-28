@@ -1,5 +1,5 @@
 {% set name = "AirTrafficSim" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # url: https://github.com/HKUST-OCTAD-LAB/AirTrafficSim/releases/download/{{ version }}/AirTrafficSim-{{ version }}.tar.gz
   url: https://github.com/HKUST-OCTAD-LAB/AirTrafficSim/archive/v{{ version }}.tar.gz
-  sha256: 649a0b2809163d65b7f95c1a8485d38ae7c6f2b9f3b88d61a5a88f225c04789c
+  sha256: 2363d910888426f40c04c6911cf0ad5dc26bbf6652afa3259260c8b9993d57be
   # Command to get sha256
   # curl -sL https://github.com/HKUST-OCTAD-LAB/AirTrafficSim/archive/v0.0.0.tar.gz | openssl sha256
 
