@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
-    - "airtrafficsim = airtrafficsim.__main__:main"
+    - airtrafficsim = airtrafficsim.__main__:main
 
 requirements:
   host:
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/HKUST-OCTAD-LAB/AirTrafficSim
-  summary: 'A web-based air traffic simulation software written in Python and javascript.'
+  summary: A web-based air traffic simulation software written in Python and javascript.
   description: |
     AirTrafficSim is a web-based air traffic simulation software written in Python and javascript. 
     It is designed to visualize historical and research data, perform microscopic studies of air traffic movement with the integration of a historical weather database, and evaluate the performance of ATM algorithms.
