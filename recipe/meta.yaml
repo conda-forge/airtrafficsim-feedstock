@@ -15,16 +15,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - "airtrafficsim = airtrafficsim.__main__:main"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy
     - pandas
     - Flask
@@ -40,6 +40,7 @@ test:
     - airtrafficsim
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/HKUST-OCTAD-LAB/AirTrafficSim
